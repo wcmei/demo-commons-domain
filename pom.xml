@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.wcmei.demo</groupId>
+        <artifactId>domo-dependencies</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath>../demo-dependencies/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>demo-commons-domain</artifactId>
+    <packaging>jar</packaging>
+
+    <name>demo-commons-domain</name>
+    <inceptionYear>2019-Now</inceptionYear>
+
+    <dependencies>
+        <!--lombok貌似不需要指定版本号-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--validator貌似不需要指定版本号-->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.2.Final</version>
+        </dependency>
+    </dependencies>
+</project>
